@@ -76,6 +76,18 @@
     .play-btn:hover {
       transform: scale(1.5);
     }
+
+    @media (max-width: 786px) {
+      .container {
+        flex-direction: column;
+      }
+      .songs-grid {
+        grid-template-columns: 1fr 1fr ;
+      }
+      .name {
+        margin-bottom: 80px;
+      }
+    }
   </style>
 </head>
 
