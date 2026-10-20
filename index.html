@@ -1,149 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Spotify</title>
-  <script src="java.js" defer></script>
-  <style>
-    * {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-    }
-
-    body {
-      background-color: rgb(41, 6, 41);
-    }
-
-    .container {
-      display: flex;
-      align-items: center;
-      height: 100vh;
-      justify-content: space-around;
-    }
-
-    .your-pfp {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 50px;
-    }
-
-    .your-pfp img {
-      width: 200px;
-      border-radius: 30px;
-    }
-
-    .name {
-      color: rgb(63, 37, 157);
-    }
-    .songs-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 28px;
-    }
-
-    .song img {
-      width: 200px;
-      border-radius: 15px;
-    }
-
-    .song {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .audio-play {
-      display: flex;
-      align-items: center;
-      background-color: rgb(12, 12, 94);
-      padding: 12px 20px;
-      border-radius: 200px;
-      color: #ffff;
-    }
-
-    .play-btn {
-      background-color: transparent;
-      border: none;
-      margin-right: 10px;
-      transition: transform 0.3s ease;
-      font-size: 20px;
-    }
-
-    .play-btn:hover {
-      transform: scale(1.5);
-    }
-
-    @media (max-width: 900px) {
-    
-      .container {
-        flex-direction: column;
-        width: 90vw;
-        margin-left: auto;
-        margin-right: auto;
-        margin: 0 50px 0 50px;
-      }
-      .songs-grid {
-        grid-template-columns: 1fr 1fr ;
-      }
-      .name {
-        margin-bottom: 80px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <div class="your-pfp">
-      <img src="main-pfp.png" alt="">
-      <h1 class="name">𝔂𝓸𝓴𝓸</h1>
-    </div>
-    <div class="songs-grid">
-
-      <section class="song">
-        <img src="pictures/shut.jpg" alt="">
-        <div class="audio-play">
-          <audio class="audio" src="songs/shut.mp3"></audio>
-          <button class="play-btn" onclick="play()">▶</button>
-          <div class="timeline">
-            <input type="range" class="timeline-slide" min="0" value="0" step="0.1">
-          </div>
-        </div>
-      </section>
-
-      <section class="song">
-        <img src="pictures/death.jpg" alt="">
-        <div class="audio-play">
-          <audio class="audio3" src="songs/death.mp3"></audio>
-          <button class="play-btn btn1" onclick="play3()">▶</button>
-          <div class="timeline3">
-            <input type="range" class="timeline-slide3" min="0" value="0" step="0.1">
-          </div>
-        </div>
-      </section>
-
-      <section class="song">
-        <img src="pictures/oh.jpg" alt="">
-        <div class="audio-play">
-          <audio class="audio2" src="songs/oh.mp3"></audio>
-          <button class="play-btn btn" onclick="play2()">▶</button>
-          <div class="timeline">
-            <input type="range" class="timeline-slide2" min="0" value="0" step="0.1">
-          </div>
-        </div>
-      </section>
-
-    </div>
-  </div>
-</body>
-
-=======
 <!DOCTYPE html>
 <html lang="en">
 
@@ -159,8 +13,9 @@
   <div class="container">
     <div class="your-pfp">
       <div class="pfp"><img src="main-pfp.png" alt="">
-      <h1 class="name">𝔂𝓸𝓴𝓸</h1></div>
-      
+        <h1 class="name">𝔂𝓸𝓴𝓸</h1>
+      </div>
+
       <h4 class="welcome">Welcome this is my small<br> spotify songs collections.</h4>
 
     </div>
@@ -236,5 +91,4 @@
   </div>
 </body>
 
->>>>>>> 25b7b8b (Initial commit of Spotify project)
 </html>
