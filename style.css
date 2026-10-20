@@ -96,7 +96,12 @@
       .songs-grid {
         grid-template-columns: 1fr 1fr ;
       }
-      .name {
-        margin-bottom: 80px;
+      .your-pfp {
+        flex-direction: column;
+      }
+      .pfp {
+        align-items: center;
+        margin-top: 50px;
+        flex-direction: column;
       }
     }
