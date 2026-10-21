@@ -36,6 +36,18 @@ let click9 = document.querySelector('.btn9')
 let audio9 = document.querySelector('.audio9')
 let timeline9 = document.querySelector('.timeline-slide9')
 
+let click10 = document.querySelector('.btn10')
+let audio10 = document.querySelector('.audio10')
+let timeline10 = document.querySelector('.timeline-slide10')
+
+let click11 = document.querySelector('.btn11')
+let audio11 = document.querySelector('.audio11')
+let timeline11 = document.querySelector('.timeline-slide11')
+
+let click12 = document.querySelector('.btn12')
+let audio12 = document.querySelector('.audio12')
+let timeline12 = document.querySelector('.timeline-slide12')
+
 function pauseAll() {
   audio.pause();
   playBtn.textContent = "▶";
@@ -63,6 +75,15 @@ function pauseAll() {
 
   audio9.pause();
   click9.textContent = "▶";
+
+  audio10.pause();
+  click10.textContent = "▶";
+
+  audio11.pause();
+  click11.textContent = "▶";
+
+  audio12.pause();
+  click12.textContent = "▶";
 }
 
 function play(musicStart) {
@@ -147,6 +168,33 @@ function play(musicStart) {
       audio9.pause()
       click9.textContent = "▶"
     }
+  } else if (musicStart === 'tera') {
+    if (audio10.paused) {
+      pauseAll()
+      audio10.play()
+      click10.textContent = "⏸"
+    } else {
+      audio10.pause()
+      click10.textContent = "▶"
+    }
+  } else if (musicStart === 'black') {
+    if (audio11.paused) {
+      pauseAll()
+      audio11.play()
+      click11.textContent = "⏸"
+    } else {
+      audio11.pause()
+      click11.textContent = "▶"
+    }
+  } else if (musicStart === 'voodoo') {
+    if (audio12.paused) {
+      pauseAll()
+      audio12.play()
+      click12.textContent = "⏸"
+    } else {
+      audio12.pause()
+      click12.textContent = "▶"
+    }
   }
 }
 
@@ -172,3 +220,6 @@ setuplayer(audio6, timeline6)
 setuplayer(audio7, timeline7)
 setuplayer(audio8, timeline8)
 setuplayer(audio9, timeline9)
+setuplayer(audio10, timeline10)
+setuplayer(audio11, timeline11)
+setuplayer(audio12, timeline12)
