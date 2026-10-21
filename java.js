@@ -32,6 +32,10 @@ let click8 = document.querySelector('.btn8')
 let audio8 = document.querySelector('.audio8')
 let timeline8 = document.querySelector('.timeline-slide8')
 
+let click9 = document.querySelector('.btn9')
+let audio9 = document.querySelector('.audio9')
+let timeline9 = document.querySelector('.timeline-slide9')
+
 function pauseAll() {
   audio.pause();
   playBtn.textContent = "▶";
@@ -56,6 +60,9 @@ function pauseAll() {
 
   audio8.pause();
   click8.textContent = "▶";
+
+  audio9.pause();
+  click9.textContent = "▶";
 }
 
 function play(musicStart) {
@@ -131,6 +138,15 @@ function play(musicStart) {
       audio8.pause()
       click8.textContent = "▶"
     }
+  } else if (musicStart === 'ABA') {
+    if (audio9.paused) {
+      pauseAll()
+      audio9.play()
+      click9.textContent = "⏸"
+    } else {
+      audio9.pause()
+      click9.textContent = "▶"
+    }
   }
 }
 
@@ -155,3 +171,4 @@ setuplayer(audio5, timeline5)
 setuplayer(audio6, timeline6)
 setuplayer(audio7, timeline7)
 setuplayer(audio8, timeline8)
+setuplayer(audio9, timeline9)
